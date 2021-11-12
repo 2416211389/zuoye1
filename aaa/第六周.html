@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      ul,
+      li {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 9*9
+      document.write("<h2>" + "第一题" + "</h2>");
+      document.write("<table>");
+      for (let i = 1; i < 10; i++) {
+        document.write("<tr>");
+        for (let j = 1; j <= i; j++) {
+          document.write("<td>" + i + "x" + j + "=" + i * j + "</td>");
+        }
+        for (let q = i; q < 9; q++) {
+          document.write("<td></td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+      document.write("<hr/>");
+      //  12*12
+      //输出0-99的数
+      for (let i = 0; i < 100; i++) {
+        let a = i % 10;
+        if (a === 0) {
+          document.write("<br/>");
+        }
+        document.write("<ul>");
+        document.write("<li>" + i + "&nbsp" + "</li>");
+        document.write("</ul>");
+      }
+    </script>
+  </body>
+</html>
